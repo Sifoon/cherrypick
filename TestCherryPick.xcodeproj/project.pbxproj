@@ -16,6 +16,14 @@
 		E498EE0423DB2DF90029FF9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E498EE0223DB2DF90029FF9B /* LaunchScreen.storyboard */; };
 		E498EE0F23DB2DF90029FF9B /* TestCherryPickTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E498EE0E23DB2DF90029FF9B /* TestCherryPickTests.swift */; };
 		E498EE1A23DB2DFA0029FF9B /* TestCherryPickUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E498EE1923DB2DFA0029FF9B /* TestCherryPickUITests.swift */; };
+		E498EE2C23DB2E350029FF9B /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E498EE2B23DB2E350029FF9B /* MainViewModel.swift */; };
+		E498EE2E23DB2FE80029FF9B /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E498EE2D23DB2FE80029FF9B /* APIService.swift */; };
+		E498EE3023DB3B840029FF9B /* Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = E498EE2F23DB3B840029FF9B /* Name.swift */; };
+		E498EE3223DB3BB80029FF9B /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = E498EE3123DB3BB80029FF9B /* Location.swift */; };
+		E498EE3423DB3C8E0029FF9B /* Picture.swift in Sources */ = {isa = PBXBuildFile; fileRef = E498EE3323DB3C8E0029FF9B /* Picture.swift */; };
+		E498EE3623DB3CC10029FF9B /* ServiceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E498EE3523DB3CC10029FF9B /* ServiceResponse.swift */; };
+		E498EE3823DB3D390029FF9B /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E498EE3723DB3D390029FF9B /* ServiceError.swift */; };
+		E498EE3A23DB4BAC0029FF9B /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E498EE3923DB4BAC0029FF9B /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +59,14 @@
 		E498EE1523DB2DFA0029FF9B /* TestCherryPickUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestCherryPickUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E498EE1923DB2DFA0029FF9B /* TestCherryPickUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCherryPickUITests.swift; sourceTree = "<group>"; };
 		E498EE1B23DB2DFA0029FF9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E498EE2B23DB2E350029FF9B /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		E498EE2D23DB2FE80029FF9B /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		E498EE2F23DB3B840029FF9B /* Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Name.swift; sourceTree = "<group>"; };
+		E498EE3123DB3BB80029FF9B /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		E498EE3323DB3C8E0029FF9B /* Picture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picture.swift; sourceTree = "<group>"; };
+		E498EE3523DB3CC10029FF9B /* ServiceResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceResponse.swift; sourceTree = "<group>"; };
+		E498EE3723DB3D390029FF9B /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
+		E498EE3923DB4BAC0029FF9B /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +117,12 @@
 		E498EDF323DB2DF60029FF9B /* TestCherryPick */ = {
 			isa = PBXGroup;
 			children = (
+				E498EE2A23DB2E1F0029FF9B /* ViewModel */,
+				E498EE2923DB2E1A0029FF9B /* View */,
+				E498EE2823DB2E150029FF9B /* Model */,
+				E498EE2723DB2E0B0029FF9B /* Service */,
 				E498EDF423DB2DF60029FF9B /* AppDelegate.swift */,
 				E498EDF623DB2DF60029FF9B /* SceneDelegate.swift */,
-				E498EDF823DB2DF60029FF9B /* ViewController.swift */,
-				E498EDFA23DB2DF60029FF9B /* Main.storyboard */,
 				E498EE0023DB2DF90029FF9B /* Assets.xcassets */,
 				E498EE0223DB2DF90029FF9B /* LaunchScreen.storyboard */,
 				E498EE0523DB2DF90029FF9B /* Info.plist */,
@@ -129,6 +147,44 @@
 				E498EE1B23DB2DFA0029FF9B /* Info.plist */,
 			);
 			path = TestCherryPickUITests;
+			sourceTree = "<group>";
+		};
+		E498EE2723DB2E0B0029FF9B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				E498EE2D23DB2FE80029FF9B /* APIService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		E498EE2823DB2E150029FF9B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E498EE2F23DB3B840029FF9B /* Name.swift */,
+				E498EE3123DB3BB80029FF9B /* Location.swift */,
+				E498EE3323DB3C8E0029FF9B /* Picture.swift */,
+				E498EE3523DB3CC10029FF9B /* ServiceResponse.swift */,
+				E498EE3723DB3D390029FF9B /* ServiceError.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E498EE2923DB2E1A0029FF9B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E498EDF823DB2DF60029FF9B /* ViewController.swift */,
+				E498EDFA23DB2DF60029FF9B /* Main.storyboard */,
+				E498EE3923DB4BAC0029FF9B /* DetailsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E498EE2A23DB2E1F0029FF9B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E498EE2B23DB2E350029FF9B /* MainViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,10 +318,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E498EE3423DB3C8E0029FF9B /* Picture.swift in Sources */,
+				E498EE2C23DB2E350029FF9B /* MainViewModel.swift in Sources */,
 				E498EDF923DB2DF60029FF9B /* ViewController.swift in Sources */,
+				E498EE3223DB3BB80029FF9B /* Location.swift in Sources */,
 				E498EDF523DB2DF60029FF9B /* AppDelegate.swift in Sources */,
 				E498EDF723DB2DF60029FF9B /* SceneDelegate.swift in Sources */,
+				E498EE2E23DB2FE80029FF9B /* APIService.swift in Sources */,
+				E498EE3823DB3D390029FF9B /* ServiceError.swift in Sources */,
+				E498EE3023DB3B840029FF9B /* Name.swift in Sources */,
+				E498EE3623DB3CC10029FF9B /* ServiceResponse.swift in Sources */,
 				E498EDFF23DB2DF60029FF9B /* TestCherryPick.xcdatamodeld in Sources */,
+				E498EE3A23DB4BAC0029FF9B /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
